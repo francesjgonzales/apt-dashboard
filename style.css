@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Containers, colums, margins and paddings */
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100% !important;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flex-right,
+.flex-left,
+.flex-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 6em;
+}
+
+.flex-icons {
+    width: 5%;
+}
+
+.margin {
+    margin: 1em;
+}
+
+.margin-top-1 {
+    margin-top: 2em;
+}
+
+.margin-top-2 {
+    margin-top: 3em;
+}
+
+.margin-bottom-1 {
+    margin-bottom: 2em;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 3em;
+}
+
+.padding {
+    padding: 1em;
+}
+
+.padding-top-1 {
+    padding-top: 2em;
+}
+
+.padding-top-2 {
+    padding-top: 3em;
+}
+
+.padding-bottom-1 {
+    padding-bottom: 2em;
+}
+
+.padding-bottom-2 {
+    padding-bottom: 3em;
+}
+
+.padding-left-1 {
+    padding-left: 2em;
+}
+
+.padding-left-2 {
+    padding-left: 3em;
+}
+
+/* font sizes and font weight*/
+.h1,
+h1 {
+    font-size: 42px;
+}
+
+.h2,
+h2 {
+    font-size: 36px;
+}
+
+.h3,
+h3 {
+    font-size: 25px;
+}
+
+.h4,
+h4 {
+    font-size: 18px;
+}
+
+.h5,
+h5 {
+    font-size: 16px;
+}
+
+.h6,
+h6 {
+    font-size: 14px;
+}
+
+.smallest-font {
+    font-size: 12px;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+/* images */
+.icon {
+    height: .8em;
+    padding-right: .3em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* new item button */
+.new-item-btn {
+    color: #fff;
+    cursor: pointer;
+    background: #0065e5;
+    border-radius: 5px;
+    border-style: none;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.new-item-btn-left {
+    position: absolute;
+    width: 72px;
+    height: 29px;
+    left: 26px;
+    color: #fff;
+    cursor: pointer;
+    /* top: 133px; */
+    background: #0065e5;
+    border-radius: 5px 0px 0px 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+.new-item-btn-right {
+    position: absolute;
+    width: 24px;
+    height: 29px;
+    fill: #fff;
+    cursor: pointer;
+    background: #0065e5;
+    border-radius: 0px 5px 5px 0px;
+    border-style: none;
+    padding: 1px 0 0 7px;
+    margin-left: 59px;
+}
+
+.new-item-btn-left:hover,
+.new-item-btn-right:hover {
+    background: #69ABFE;
+}
+
+.item-add {
+    height: 1.2em;
+}
+
+.dropdown {
+    padding-left: 10px;
+}
+
+.cardspan {
+    padding: 10px;
+}
+
+/* Table */
+
+.header {
+    height: 2em;
+    vertical-align: middle;
+    display: flex;
+}
+
+.tabs {
+    background-color: #F4F5F7;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tabs>h4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stage-tab {
+    background-color: #F4F5F7;
+    padding: 5px;
+    border-radius: 0 10px 0 0;
+}
+
+.priority-tab {
+    padding: 5px;
+}
+
+.deal-value-tab {
+    text-align: center;
+}
+
+.©-title {
+    padding: 5px;
+}
+
+.close-date-link {
+    height: 16px;
+    padding-right: 10px;
+    fill: #4A9CC9;
+}
+
+.close-date-title>h4 {
+    margin-right: auto;
+}
+
+.close-date {
+    width: 40px;
+}
+
+/* svg+Text aligned vertically */
+.icon,
+.text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.icon-only {
+    padding:10px;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: auto;
+    align-content: center;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    background-color: #F4F5F7;
+}
+
+table tr th {
+    position: sticky;
+    top: 0;
+    max-height: 5vh;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+}
+
+table tr th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+table tr td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #F4F5F7;
+    border-left: solid 8px darkgreen;
+    width: 15vw;
+}
+
+table tr td:last-child {
+    background-color: #F4F5F7;
+    border-right: solid 8px #C3C4C8;
+}
+
+.dashboard {
+    overflow: auto;
+    max-height: 98vh;
+    max-width: auto!important;
+}
+
+.deals-title{
+    display: inline-flex;
+    width: auto;
+    padding-left: 10px;
+}
+
+.deals-dropdown {
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 13px;
+    color: #126845;
+}
+
+.close-date-alert {
+    height: 16px;
+    padding-left: 10px;
+}
+
+.owner-tab {
+    background-color: #F4F5F7;
+    padding: 5px;
+    border-radius: 10px 0 0 0;
+}
+
+img {
+    width: 50px;
+}
+.clip-circle {
+    clip-path: circle(20px at center);
+  }
+
+  .progress-circle {
+    width: 20px;
+    vertical-align: middle;
+  }
+
+  .date {
+    text-align: center;
+  }
+
+  .green-tab {
+    border-bottom: solid 2px darkgreen;
+  }
+
+  .poc {
+    background-color: white;
+  }
+
+  .last-contact {
+    text-align: center;
+    background-color: white;
+  }
+  
+  .flag {
+    padding-right: 30px;
+  }
+
+  .total-sum-deals {
+    background-color: #B0B5EF!important;
+    border-left: solid 8px #B0B5EF!important;
+    border-right: solid 8px #B0B5EF!important;
+  }
+
+  .total-sum-won {
+    background-color: #61D396!important;
+    border-left: solid 8px #61D396!important;
+    border-right: solid 8px #61D396!important;
+  }
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .flex-icons {
+        padding: 0 5px 0 5px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+}

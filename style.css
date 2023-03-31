@@ -12,9 +12,13 @@ body {
 
 /* Containers, colums, margins and paddings */
 .container {
+    margin: 1em;
+    padding: 1em;
+}
+
+.row {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 10px;
 }
 
 /* For desktop: */
@@ -93,10 +97,6 @@ body {
     width: 5%;
 }
 
-.margin {
-    margin: 1em;
-}
-
 .margin-top-1 {
     margin-top: 2em;
 }
@@ -113,9 +113,6 @@ body {
     margin-bottom: 3em;
 }
 
-.padding {
-    padding: 1em;
-}
 
 .padding-top-1 {
     padding-top: 2em;
@@ -282,32 +279,22 @@ h6 {
     background-color: #F4F5F7;
     padding: 5px;
     border-radius: 0 10px 0 0;
+    width: 10vw;
 }
 
-.priority-tab {
+.priority-tab, .deal-value-tab {
     padding: 5px;
-}
-
-.deal-value-tab {
+    width: 10vw;
     text-align: center;
 }
 
-.©-title {
-    padding: 5px;
-}
-
-.close-date-link {
-    height: 16px;
-    padding-right: 10px;
-    fill: #4A9CC9;
-}
-
-.close-date-title>h4 {
-    margin-right: auto;
-}
-
 .close-date {
-    width: 40px;
+    width: 2.5vw;
+}
+
+.phone {
+    min-width: 2.5vw;
+    max-width: 40vw;
 }
 
 /* svg+Text aligned vertically */
@@ -417,15 +404,14 @@ img {
     border-bottom: solid 2px darkgreen;
   }
 
-  .poc {
-    background-color: white;
+  .poc, .last-contact, .phone, .edit {
+    background-color: white!important;
   }
 
   .last-contact {
     text-align: center;
-    background-color: white;
   }
-  
+
   .flag {
     padding-right: 30px;
   }
